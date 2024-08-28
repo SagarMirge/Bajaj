@@ -1,0 +1,57 @@
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "phoneNumber": 9876543210,
+  "emailId": "jane.doe@example.com"
+}
+{
+    "is_success": false,
+    "message": "phoneNumber has already been used."
+}
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "phoneNumber": 9876543216,
+  "emailId": "jane.doe@example.com"
+}
+
+{
+    "is_success": false,
+    "message": "Oh no, looks like this user already exists. Please try to play with the data you're sending and try to break the API."
+}
+
+{
+  "firstName": "Bob",
+  "lastName": "Smith",
+  "phoneNumber": "not_a_number",
+  "emailId": "bob.smith@example.com"
+}
+{
+    "is_success": true,
+    "message": "Congratulations, you have successfully broken through the API. phoneNumber has to be in a proper format."
+}
+
+
+{
+  "firstName": "Carol",
+  "lastName": "Williams",
+  "phoneNumber": 12345,
+  "emailId": "carol.williams@example.com"
+}
+{
+    "is_success": true,
+    "message": "Congratulations, you have successfully broken through the API. phoneNumber has to be in a proper format."
+}
+
+
+
+{
+  "firstName": "Eve",
+  "lastName": "Davis",
+  "emailId": "eve.davis@example.com"
+}
+{
+    "is_success": true,
+    "message": "Congratulations, you have successfully broken through the API. phoneNumber was a required field."
+}
